@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>To-do List</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <style>
+            #remove-all__ok{
+                border: solid black 1px;
+                margin: 5px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                transition: 0.1s ease;
+            }
+            #remove-all__ok:hover{
+                background-color: firebrick;
+                color: white;
+            }
+            #remove-all__ok:active{
+                background-color: gray;
+                color: whitesmoke;
+            }
+            .todo-item{
+                cursor: pointer;
+            }
+            .row{
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="remove-all__ok">♲</button>  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Список дел</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <ul id="list" class="list-group">
+                       <li class="list-group-item">
+                            <input type="text" id="field"
+                            class="form-control" placeholder="Что нужно сделать?">
+                       </li> 
+                    </ul>
+                </div>
+            </div>
+            <div id="remove-dialog" class = "modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    <p>Вы действительно хотите удалить выбранные пункты?</p>
+                    </div>
+                    <div class ="modal-footer">
+                        <button type="button" class ="btn btn-default"
+                        data-dismiss="modal">Закрыть</button>
+                        <button type="button" id="remove-dialog__ok" class="btn btn-danger">Удалить</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+            <script src="script.js"></script>
+            
+        </div>
+    </body>
+</html>
