@@ -1,6 +1,19 @@
+var enter = jQuery.Event("keydown", { keyCode: 46 });
+
+var NewDay = function(event){
+    $('body').append(SchoolDay);
+};
+
+$("#CreateDay").on("click", NewDay);
+
+
+              
+
+
+
+
 $("#field").on("keydown", function(event){
     var item;
-    var counter = 0;
     var date = new Date;
     var hours = date.getHours();
     var minutes = date.getMinutes();
@@ -8,13 +21,12 @@ $("#field").on("keydown", function(event){
     //var seconds = date.getSeconds();
     
     if(event.which == 13){
-        counter++;
         item = $("<li>1.</li>");
         item.addClass("list-group-item todo-item");
         item.addClass("deletable-group-item");
         item.html($(this).val());
         if(minutes < 10){
-        $(this).val( hours + ":" + "0" + minutes + ": ");
+            $(this).val( hours + ":" + "0" + minutes + ": ");
         }
         else{
             $(this).val( hours + ":" + minutes + ": ");
@@ -22,9 +34,16 @@ $("#field").on("keydown", function(event){
         item.click(function(){
            $(this).toggleClass("list-group-item-info"); 
         });
+        $('#remove-all__ok').click(function(){
+            $(item).toggleClass('list-group-item-info');
+        });
+        
         $("#list").append(item);
     }
 });
+
+
+
 
 var removeItems = function(event){
     $(".list-group-item-info").remove();
@@ -37,6 +56,12 @@ $(document).on("keydown", function(){
     }
 });
 
+
+
+$('#deleter').on('click', function(){
+    $("#remove-dialog").modal("show");  
+});
+
 $("#remove-dialog__ok").on("click", removeItems);
 
 $("#remove-dialog").on("keydown", function(event){
@@ -44,15 +69,5 @@ $("#remove-dialog").on("keydown", function(event){
         removeItems();
     }
 });
-//Delete all objects of list
-var removeAll = function(event){
-    $(".deletable-group-item").remove();
-}
-
-$("#remove-all__ok").on("click", function(){
-    removeAll();
-});
 
 
-
-              

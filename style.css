@@ -1,0 +1,99 @@
+BODY{
+    text-decoration: none;
+    background-image: url(https://img1.goodfon.ru/original/2560x1600/7/43/makro-macro-trava-bliki.jpg);
+    opacity: 0.8;
+    font-family: 'Comfortaa', cursive;
+}
+
+.delete_1item{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 0.1px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 89%;
+    margin-top: 10;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.2s;
+    background-color: firebrick;
+    color: white;
+    opacity: 1 !important;
+}
+.delete_1item:hover{
+    background-color: forestgreen;
+}
+
+.delete_1item:active{
+    background-color: firebrick;
+}
+.CreateDay{
+    display: inline-block;
+    border: 2px solid forestgreen;
+    padding: 100px;
+    margin: 100px; 
+    height: 150px;
+    width: 100px;
+    border-radius: 30px;
+    padding-right: 140;
+    padding-bottom: 140;
+    color: black;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 30;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12;
+    background-color: white;
+}
+.CreateDay:hover{
+    border: 2px solid darkcyan;
+    color: darkcyan ;
+}
+.CreateDay:active{
+    border: 2px solid forestgreen;   
+    color: forestgreen;
+}
+#remove-all__ok{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 0.1px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 89%;
+    margin-top: 10;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.2s;
+    background-color: firebrick;
+    color: white;
+}
+
+.School_Day{
+    border: 2px solid fores;
+    padding: 100px;
+    margin: 100px; 
+    font-family: monospace;
+    height: 150px;
+    width: 100px;
+}
+#headline{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: whitesmoke;
+        font-family: 'Comfortaa';
+}
+.head_day{
+    color: firebrick;
+}
+#head_tdl{
+    color: whitesmoke;
+    font-family: 'Comfortaa';
+}    
+
+
+    
+    
+    
+    

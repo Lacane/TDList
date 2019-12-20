@@ -3,6 +3,7 @@
         <title>To-do List</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "style.css">
         <style>
             #remove-all__ok{
                 border: solid black 1px;
@@ -43,10 +44,72 @@
 <!-- /Yandex.Metrika counter -->
     </head>
     <body>
-        <button id="remove-all__ok">♲</button>  
+        
+        
+        
+        <h1 id='headline'>Расписание</h1>
+        
+         <div class="CreateDay">
+             <h6 class="head_day">Понедельник</h6>
+             <ol>
+                <li>Русский</li>
+                <li>Физики</li>
+                <li>Географи</li>
+                <li>ИНО</li>
+                <li>Литература</li>
+                <li>Алгебра</li>
+             </ol>
+        </div> 
+        <div class="CreateDay">
+             <h6 class="head_day">Вторник</h6>
+             <ol>
+                <li>ИКТ</li>
+                <li>История</li>
+                <li>Химия</li>
+                <li>Физика</li>
+                <li>Алгебра</li>
+                <li>География</li>
+             </ol>
+        </div>
+                <div class="CreateDay">
+             <h6 class="head_day">Среда</h6>
+             <ol>
+                <li>История</li>
+                <li>Алгебра</li>
+                <li>Физика</li>
+                <li>Биология</li>
+                <li>Физра</li>
+                <li>Элективы</li>
+             </ol>
+        </div>
+                <div class="CreateDay">
+             <h6 class="head_day">Четверг</h6>
+             <ol>
+                <li>Общество</li>
+                <li>Русский</li>
+                <li>Алгебра</li>
+                <li>ИНО</li>
+                <li>Литература</li>
+                <li>Биология</li>
+             </ol>
+        </div>
+                <div class="CreateDay">
+             <h6 class="head_day">Пятница</h6>
+             <ol>
+                <li>ИНО</li>
+                <li>Геометрия</li>
+                <li>Геометрия</li>
+                <li>Физра</li>
+                <li>Русский</li>
+                <li>Химия</li>
+             </ol>
+        </div>
+
+        
+        
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div  id='head_tdl' class="col-md-12 text-center">
                     <h1>Список дел</h1>
                 </div>
             </div>
@@ -56,8 +119,12 @@
                        <li class="list-group-item">
                             <input type="text" id="field"
                             class="form-control" placeholder="Что нужно сделать?">
+                           <button id ='deleter' class="delete_1item">
+                                <p>Удалить</p>
+                           </button>
                        </li> 
                     </ul>
+                    <button id = 'remove-all__ok'>Выделить все</button>
                 </div>
             </div>
             <div id="remove-dialog" class = "modal fade" tabindex="-1">
@@ -78,7 +145,8 @@
              <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
             <script src="script.js"></script>
-            
         </div>
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        
     </body>
 </html>
