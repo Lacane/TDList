@@ -92,8 +92,11 @@ BODY{
     font-family: 'Comfortaa';
 }    
 
-
-    
-    
+#wheather{
+    float: left;
+    margin-top: 60;
+    margin-right: -200;
+}
+ 
     
     

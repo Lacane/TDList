@@ -1,16 +1,3 @@
-var enter = jQuery.Event("keydown", { keyCode: 46 });
-
-var NewDay = function(event){
-    $('body').append(SchoolDay);
-};
-
-$("#CreateDay").on("click", NewDay);
-
-
-              
-
-
-
 
 $("#field").on("keydown", function(event){
     var item;
