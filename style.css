@@ -4,7 +4,11 @@ BODY{
     opacity: 0.8;
     font-family: 'Comfortaa', cursive;
 }
-
+#wheather{
+    float: left;
+    margin-top: 60;
+    margin-right: -200;
+}
 .delete_1item{
     border: none;
     padding-top: 10px;
@@ -92,11 +96,6 @@ BODY{
     font-family: 'Comfortaa';
 }    
 
-#wheather{
-    float: left;
-    margin-top: 60;
-    margin-right: -200;
-}
- 
+
     
     
