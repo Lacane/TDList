@@ -25,7 +25,7 @@ BODY{
     opacity: 1 !important;
 }
 .delete_1item:hover{
-    background-color: forestgreen;
+    background-color: crimson;
 }
 
 .delete_1item:active{
@@ -96,6 +96,54 @@ BODY{
     font-family: 'Comfortaa';
 }    
 
+<<<<<<< HEAD
+.wheather{
+    float: left;
+    margin-top: 60;
+    margin-right: -200;
+}
+.open_info_day{
+    align-content: center;
+    position: absolute;
+    display: block;
+    margin: 30%;
+    margin-top: 15%;
+    border: 3px solid forestgreen;
+    background-color: white;
+    padding-right: 100;
+    padding-left: 100;
+    padding-top: 10;
+    padding-bottom: 170;
+    z-index: 1;
+    font-size: 30;
+    border-radius: 30px;
+}  
+.head_big_day{
+    display: flex;
+    padding-bottom: 100;
+    color: firebrick;
+    
+}   
+.lessons{
+    font-size: 35
+}
+.les_time{
+    display: inline-block;
+    color: firebrick;
+    font-size: 24;
+    
+}
+
+#pn, #pt, #ct, #sr, #vt{
+    display: none;
+}
+
+
+
+
+
+=======
 
     
     
+>>>>>>> a021cb7014551d2b97cdf97047dc208f0922d393
