@@ -1,0 +1,15 @@
+#CreateDay{
+    border: 2px solid forestgreen;
+    padding: 50px;
+    font-family: monospace;
+    color: forestgreen;
+    height: 150px;
+    width: 100px;
+    margin: 40px;
+    font-size: 40;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 120;
+    cursor: pointer;
+    
+}

@@ -1,4 +1,42 @@
 
+
+$('#pt_button').click(function() {
+    $('#pt').show();
+});
+$('#pt').click(function() {
+    $(this).hide();
+});
+
+$('#vt_button').click(function() {
+    $('#vt').show();
+});
+$('#vt').click(function() {
+    $(this).hide();
+});
+
+$('#sr_button').click(function() {
+    $('#sr').show();
+});
+$('#sr').click(function() {
+    $(this).hide();
+});
+
+$('#ct_button').click(function() {
+    $('#ct').show();
+});
+$('#ct').click(function() {
+    $(this).hide();
+});
+
+$('#pn_button').click(function() {
+    $('#pn').show();
+});
+$('#pn').click(function() {
+    $(this).hide();
+});
+
+
+
 $("#field").on("keydown", function(event){
     var item;
     var date = new Date;
@@ -28,6 +66,7 @@ $("#field").on("keydown", function(event){
         $("#list").append(item);
     }
 });
+
 
 
 
